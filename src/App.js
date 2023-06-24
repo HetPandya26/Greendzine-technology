@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ListView from './ListView';
 
-function App() {
+const App = () => {
+  
+  const link = 'https://yt3.googleusercontent.com/ytc/AGIKgqMEs7nBJVSNr3kcQqxuMNBmrV1pAOMt6NsFDoz3=s900-c-k-c0x00ffffff-no-rj';
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='Total'>
+      <div className='First'>
+      <div className='logo'>
+          
+            <img src={link} alt="greendzine tecnologies"  className='comp-logo'/>
+            <div className='right-block' >
+                <h1 className='heading1'><a className="cl" href="https://www.greendzine.in/">Greendzine Technologies</a></h1>
+            </div>
+      </div>
+      </div>
+      <ListView />
     </div>
   );
-}
+};
 
 export default App;
